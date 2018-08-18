@@ -165,12 +165,15 @@ input, textarea, button {
 	color: $white;
 	.bg_mask {
 		background: $mask;
+		p {
+		}
 	}
 }
 // phone
 @media only screen and (max-width: $phone-max){
 	.section1 {
 		p {
+			margin: 0.2rem 0;
 		}
 	}
 }
@@ -178,8 +181,8 @@ input, textarea, button {
 @media only screen and (min-width: $pad-min){
 	.section1 {
 		p {
-			width: 80%;
-			margin: auto;
+			width: 70%;
+			margin: 0.2rem auto;
 		}
 	}
 }
@@ -320,7 +323,7 @@ input, textarea, button {
 @media only screen and (min-width: $pad-min){
 	.section3 {
 		.intro {
-			width: 80%;
+			width: 70%;
 			margin: auto;
 		}
 		h3 {
@@ -483,12 +486,7 @@ input, textarea, button {
 @media only screen and (min-width: $pad-min){
 	.section5 {
 		h2 {
-			text-align: right;
-		}
-		ul {
-			text-align: right;
-			li {
-			}
+			text-align: left;
 		}
 	}
 }
@@ -526,9 +524,7 @@ input, textarea, button {
 			box-shadow: $shadow;
 			text-align: center;
 			position: relative;
-			b {
-				display: block;
-				margin: 0 0 0.2rem;
+			h3 {
 				font-weight: bold;
 			}
 			p {
@@ -567,7 +563,8 @@ input, textarea, button {
 @media only screen and (min-width: $pad-min){
 	.section6 {
 		.intro {
-			margin-bottom: 0.4rem;
+			width: 70%;
+			margin: 0 auto 0.4rem;
 			text-align: center;
 		}
 		ul {
