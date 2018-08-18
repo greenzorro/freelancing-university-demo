@@ -153,53 +153,6 @@ input, textarea, button {
   .section .bg_mask {
     background: rgba(25, 63, 107, 0.5); }
 
-.action {
-  background: #193F6B; }
-  .action .bg_wrap {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem; }
-    .action .bg_wrap h2 {
-      margin-bottom: 0.1rem;
-      color: #fff; }
-    .action .bg_wrap p {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center; }
-      .action .bg_wrap p a {
-        height: 0.4rem;
-        line-height: 0.4rem;
-        border: 1px solid #fff;
-        border-radius: 0.04rem;
-        color: #fff;
-        text-align: center; }
-      .action .bg_wrap p .main_btn {
-        background: #fff;
-        border: none;
-        color: #193F6B; }
-
-@media only screen and (max-width: 767px) {
-  .action p {
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap; }
-    .action p a {
-      -webkit-flex: 0 1 0.4rem;
-      flex: 0 1 0.4rem;
-      width: 100%;
-      margin: 0.1rem 0; } }
-@media only screen and (min-width: 768px) {
-  .action p {
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin: 0.2rem 0; }
-    .action p a {
-      -webkit-flex: 0 1 2.4rem;
-      flex: 0 1 2.4rem;
-      margin: 0 0.2rem; } }
 .footer {
   text-align: center; }
   .footer .bg_wrap {
