@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>AMU UG General</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta name="renderer" content="webkit">
+<link href="http://greenzorro.github.io/colacdn/assets/css/reset.css" rel="stylesheet" type="text/css" />
+<script src="http://greenzorro.github.io/colacdn/assets/js/jquery-latest.js"></script>
+<style>
+html { font-size: 100px; }
+body { font-size: 0.16rem; }
+
+/*marketo form style initialize*/
+.mktoForm { width: auto!important; }
+.mktoFormRow .mktoOffset { display: none!important; }
+.mktoFormRow .mktoFieldDescriptor { float: none!important; margin: 0!important; }
+.mktoFormRow .mktoFieldWrap { width: 100%; }
+.mktoFormRow .mktoLabel { float: none!important; display: none; width: auto!important; padding: 0!important; font-weight: normal!important; }
+.mktoFormRow .mktoLabel .mktoAsterix { padding: 0!important; }
+.mktoFormRow .mktoField { box-sizing: border-box!important; float: none!important; display: block!important; width: 100%!important; padding: 0.07rem 0.05rem!important; margin: 0.08rem 0!important; border-radius: 0.04rem; border: 1px solid #ccc; }
+.mktoFormRow input.mktoField { padding-left: 0.09rem!important; }
+.mktoButtonRow { display: block!important; }
+.mktoButtonRow .mktoButtonWrap { display: block!important; }
+.mktoButtonRow button { display: block; width: 2.1rem; height: 0.4rem; line-height: 0.4rem; margin: 0.25rem auto 0.25rem!important; padding: 0!important; border-radius: 0.04rem; background: #68C7C6; border: none; color: #fff; text-align: center; font-size: 0.16rem; }
+
+</style>
+</head>
+
+<body>
+
+	<!-- marketo form -->
+	<script src="https://app-ab20.marketo.com/js/forms2/js/forms2.min.js"></script>
+	<form id="mktoForm_2849"></form>
+	<script>MktoForms2.loadForm("https://app-ab20.marketo.com", "553-ZUA-407", 2849);</script>
+	<script>
+        // When successfully submitted, show popup window
+	    MktoForms2.whenReady(function (form) {
+	    	jQuery(".mktoButton").html("现在下载");
+	        form.onSuccess(function () {
+	            console.log("done →_→");
+	        });
+	    });
+	</script>
+	<!-- marketo form -->
+
+</body>
+</html>
