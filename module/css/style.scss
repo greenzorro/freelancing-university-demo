@@ -719,6 +719,73 @@ input, textarea, button {
 
 
 //*********************************************************************//
+//                               section9
+//*********************************************************************//
+
+.section9 {
+	background-color: $gray_light;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: $black;
+	.bg_mask {
+		// background: $mask;
+		.left {
+			background: $white;
+			border-radius: $radius;
+			.content {
+				padding: 0.2rem;
+			}
+		}
+		.right {
+			background: $white;
+			border-radius: $radius;
+		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.section9 {
+		.left {
+			margin-bottom: 0.2rem;
+		}
+		.right {
+			.form {
+				padding: 0 0.1rem;
+				h2 {
+					padding: 0.2rem 0 0;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.section9 {
+		.left {
+			float: left;
+			width: 60%;
+		}
+		.right {
+			float: right;
+			width: 38%;
+			.form {
+				padding: 0.1rem 0.2rem;
+				h2 {
+					padding: 0.2rem 0;
+					margin: 0;
+					font-size: 0.24rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
 //                               action                                //
 //*********************************************************************//
 

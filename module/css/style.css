@@ -395,6 +395,42 @@ input, textarea, button {
   .section8 p {
     width: 70%;
     margin: 0.2rem auto; } }
+.section9 {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #333; }
+  .section9 .bg_mask .left {
+    background: #fff;
+    border-radius: 0.04rem; }
+    .section9 .bg_mask .left .content {
+      padding: 0.2rem; }
+  .section9 .bg_mask .right {
+    background: #fff;
+    border-radius: 0.04rem; }
+
+@media only screen and (max-width: 767px) {
+  .section9 .left {
+    margin-bottom: 0.2rem; }
+  .section9 .right .form {
+    padding: 0 0.1rem; }
+    .section9 .right .form h2 {
+      padding: 0.2rem 0 0;
+      margin: 0; } }
+@media only screen and (min-width: 768px) {
+  .section9 .left {
+    float: left;
+    width: 60%; }
+  .section9 .right {
+    float: right;
+    width: 38%; }
+    .section9 .right .form {
+      padding: 0.1rem 0.2rem; }
+      .section9 .right .form h2 {
+        padding: 0.2rem 0;
+        margin: 0;
+        font-size: 0.24rem; } }
 .action {
   background: #193F6B; }
   .action .bg_wrap {
