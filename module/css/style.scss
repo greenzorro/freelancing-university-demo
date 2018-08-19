@@ -7,6 +7,7 @@ $brand1: #193F6B;
 $brand2: #FC8222;
 $link: #FC8222;
 $mask: rgba(25,63,107,0.5);
+$mask2: rgba(35,35,35,0.5);
 $white: #fff;
 $black: #333;
 $gray_dark: #ddd;
@@ -467,12 +468,18 @@ input, textarea, button {
 			color: $white;
 		}
 		ul {
-			li span {
-				display: inline-block;
-				padding: 0.1rem 0.15rem;
-				margin: 0.05rem 0;
-				background: $brand2;
-				border-radius: $radius;
+			li {
+				b {
+					padding-right: 0.2rem;
+					font-weight: bold;
+				}
+				span {
+					display: inline-block;
+					padding: 0.1rem 0.15rem;
+					margin: 0.05rem 0;
+					background: $brand2;
+					border-radius: $radius;
+				}
 			}
 		}
 	}
@@ -644,6 +651,66 @@ input, textarea, button {
 			li {
 				@include flex (0 1 30%);
 			}
+		}
+	}
+}
+
+
+
+
+//*********************************************************************//
+//                               section8
+//*********************************************************************//
+
+.section8 {
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: $black;
+	.bg_mask {
+		// background: $mask;
+		table {
+			width: 100%;
+			margin-top: 0.4rem;
+			border: 1px solid $brand1;
+			thead {
+				background: $brand1;
+				text-align: left;
+				color: $white;
+				th {
+					padding: 0.1rem;
+					font-weight: bold;
+				}
+			}
+			tbody {
+				tr:nth-child(odd) {
+					background: $white;
+				}
+				tr:nth-child(even) {
+					background: lighten($brand1,70%);
+				}
+				td {
+					padding: 0.1rem;
+				}
+			}
+		}
+	}
+}
+// phone
+@media only screen and (max-width: $phone-max){
+	.section8 {
+		p {
+			margin: 0.2rem 0;
+		}
+	}
+}
+// pad and pc
+@media only screen and (min-width: $pad-min){
+	.section8 {
+		p {
+			width: 70%;
+			margin: 0.2rem auto;
 		}
 	}
 }

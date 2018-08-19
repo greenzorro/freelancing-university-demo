@@ -240,6 +240,9 @@ input, textarea, button {
     background: rgba(25, 63, 107, 0.5); }
     .section5 .bg_mask h2 {
       color: #fff; }
+    .section5 .bg_mask ul li b {
+      padding-right: 0.2rem;
+      font-weight: bold; }
     .section5 .bg_mask ul li span {
       display: inline-block;
       padding: 0.1rem 0.15rem;
@@ -361,6 +364,37 @@ input, textarea, button {
     .section7 ul li {
       -webkit-flex: 0 1 30%;
       flex: 0 1 30%; } }
+.section8 {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #333; }
+  .section8 .bg_mask table {
+    width: 100%;
+    margin-top: 0.4rem;
+    border: 1px solid #193F6B; }
+    .section8 .bg_mask table thead {
+      background: #193F6B;
+      text-align: left;
+      color: #fff; }
+      .section8 .bg_mask table thead th {
+        padding: 0.1rem;
+        font-weight: bold; }
+    .section8 .bg_mask table tbody tr:nth-child(odd) {
+      background: #fff; }
+    .section8 .bg_mask table tbody tr:nth-child(even) {
+      background: #eef4fb; }
+    .section8 .bg_mask table tbody td {
+      padding: 0.1rem; }
+
+@media only screen and (max-width: 767px) {
+  .section8 p {
+    margin: 0.2rem 0; } }
+@media only screen and (min-width: 768px) {
+  .section8 p {
+    width: 70%;
+    margin: 0.2rem auto; } }
 .action {
   background: #193F6B; }
   .action .bg_wrap {
