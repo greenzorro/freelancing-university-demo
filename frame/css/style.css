@@ -92,6 +92,8 @@ input, textarea, button {
     background: rgba(25, 63, 107, 0.5); }
     .hero .bg_mask .bg_wrap .instruction {
       color: #fff; }
+      .hero .bg_mask .bg_wrap .instruction p {
+        margin: 0.1rem 0; }
     .hero .bg_mask .bg_wrap .form {
       overflow: hidden;
       background: #fff;

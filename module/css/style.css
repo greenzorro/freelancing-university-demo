@@ -243,13 +243,19 @@ input, textarea, button {
     .section5 .bg_mask ul li span {
       display: inline-block;
       padding: 0.1rem 0.15rem;
-      margin: 0.05rem;
+      margin: 0.05rem 0;
       background: #FC8222;
       border-radius: 0.04rem; }
 
+@media only screen and (max-width: 767px) {
+  .section5 .intro {
+    margin-bottom: 0.2rem; } }
 @media only screen and (min-width: 768px) {
   .section5 h2 {
-    text-align: left; } }
+    text-align: left; }
+  .section5 .intro {
+    width: 60%;
+    margin-bottom: 0.4rem; } }
 .section6 {
   background-color: #FC8222;
   background-repeat: no-repeat;
@@ -317,6 +323,44 @@ input, textarea, button {
         bottom: 0.25rem;
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0); } }
+.section7 {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff; }
+  .section7 .bg_mask ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center; }
+    .section7 .bg_mask ul li {
+      text-align: center; }
+      .section7 .bg_mask ul li p {
+        margin-top: 0.1rem; }
+
+@media only screen and (max-width: 767px) {
+  .section7 ul {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin: 0.2rem 0 0; }
+    .section7 ul li {
+      margin: 0.2rem 0; } }
+@media only screen and (min-width: 768px) {
+  .section7 .intro {
+    width: 70%;
+    margin: 0 auto 0.4rem; }
+  .section7 ul {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0.6rem 0 0.2rem; }
+    .section7 ul li {
+      -webkit-flex: 0 1 30%;
+      flex: 0 1 30%; } }
 .action {
   background: #193F6B; }
   .action .bg_wrap {
